@@ -1,0 +1,46 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #f5f5f5;
+	font-family: 'Maven Pro', sans-serif;
+}
+ul,ol{
+	list-style:none;
+}
+ul li, ol li{
+	margin-bottom:5px;
+}
+.post{
+	.load{
+		border:none;
+		padding:0.5em 1.5em;
+		background-color:#efefef;
+		color:#6a6a6a
+	}
+	.comentarios >div{
+		$cor_comment :#ccc;
+		$tam : 30px;
+		background-color:$cor_comment;
+		margin:$tam*1.05 2em 1em;
+		padding:1em;
+		position:relative;
+		border-radius: $tam/2;
+		&::before{
+			content:' ';
+			position:absolute;
+			top:$tam*-1;
+			left:$tam;
+			// width:$tam;
+			// height:$tam/2;
+			display:block;
+			border-style: solid;
+			border-width: $tam/2 $tam*0.85;
+			border-color:transparent  transparent  $cor_comment  transparent;
+			
+			
+		}
+	}
+}

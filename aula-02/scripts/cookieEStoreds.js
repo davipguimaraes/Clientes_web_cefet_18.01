@@ -1,0 +1,2 @@
+
+sessionStorage.setItem('key', 'value');
